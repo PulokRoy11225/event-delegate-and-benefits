@@ -21,7 +21,11 @@
   </section>
   <script>
     const items = document.getElementsByClassName('item');
-    console.log('items');
+    for(const item of items){
+      item.addEventListener('click',function(){
+        console.log(event.target.parentNode);
+      })
+    }
   </script>
 </body>
 </html>
