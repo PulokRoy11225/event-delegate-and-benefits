@@ -22,7 +22,7 @@
   <script>
     const items = document.getElementsByClassName('item');
     for(const item of items){
-      item.addEventListener('click',function(){
+      item.addEventListener('click',function(event){
         console.log(event.target.parentNode);
       })
     }
